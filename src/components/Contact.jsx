@@ -30,11 +30,11 @@ const Contact = () => {
         <div className="mt-10 mx-20 grid md:grid-cols-2 gap-6 text-gray-900 dark:text-white">
           <div className="flex flex-col items-center space-y-2">
             <Mail size={32} />
-            <p>jyotish####@gmail.com</p>
+            <p>jyotish1136@gmail.com</p>
           </div>
           <div className="flex flex-col items-center space-y-2">
             <Phone size={32} />
-            <p>+91 62022#####</p>
+            <p>+91 6202289236</p>
           </div>
           <div className="flex flex-col items-center space-y-2"></div>
         </div>
