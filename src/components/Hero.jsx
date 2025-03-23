@@ -11,7 +11,7 @@ const Hero = () => {
         <p className="mt-4 text-gray-600 dark:text-gray-300 text-lg max-w-xl">
           Specializing in React.js, Tailwind CSS, and Spring Boot.
         </p>
-        <div className="m-6">
+        <div className="m-6 flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a
             href="#contact"
             className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
