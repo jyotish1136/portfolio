@@ -24,13 +24,13 @@ const Services = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col justify-center items-center p-4 text-center bg-gray-200 dark:bg-slate-900 dark:text-white scroll-mt-16"
+      className="h-1vh md:h-screen flex flex-col justify-center items-center p-4 text-center dark:bg-slate-900 bg-gray-200 dark:text-white scroll-mt-10"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-1">
         My Skills
         <div className="bg-slate-900 dark:bg-white h-[4px] mt-2"></div>
       </h2>
-      <div className="flex flex-wrap justify-center px-16 bg-gray-200 text-gray-900 dark:bg-slate-900 dark:text-white">
+      <div className="flex flex-wrap justify-center px-16  text-gray-900 dark:bg-slate-900 dark:text-white pt-12">
         {skills.map(({ icon: Iconx, name, color }, index) => (
           <div
             className="flex flex-col items-center justify-center mx-15 my-6 text-center h-[130px] aspect-square border-4 border-blue-600 rounded-full text-gray-900 dark:text-white transition-transform duration-300 hover:scale-110"

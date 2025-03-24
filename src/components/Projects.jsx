@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <section
       id="project"
-      className="transition-all duration-300 bg-gray-50 dark:bg-gray-900 p-5 scroll-mt-16"
+      className="h-1vh md:h-screen transition-all duration-300 bg-gray-200 dark:bg-gray-900 p-5 scroll-mt-24"
     >
       <div className="container mx-auto content-center text-center flex flex-col justify-center items-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">

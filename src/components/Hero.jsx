@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex md:flex-row flex-col-reverse justify-evenly gap-6 transition-all duration-300 bg-gray-100 dark:bg-gray-900 dark:text-white scroll-mt-16"
+      className="h-1vh md:h-screen pt-18 flex md:flex-row flex-col-reverse justify-evenly gap-6 transition-all duration-300 bg-gray-200 dark:bg-gray-900 dark:text-white scroll-mt-16"
     >
       <div className="flex px-10 flex-col justify-center items-center text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
@@ -21,7 +21,7 @@ const Hero = () => {
           <a
             href="/Resume.pdf"
             download="Resume.pdf"
-            className="px-6 mx-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition"
+            className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
           >
             Resume
           </a>
