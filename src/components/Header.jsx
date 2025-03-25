@@ -6,28 +6,30 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="py-4 px-2 md:px-10 fixed w-full z-50 duration-300 bg-gray-200 text-gray-900 dark:bg-slate-900 dark:text-white border-b border-slate-300 dark:border-slate-800 shadow-2xs">
+    <nav className="py-4 px-2 md:px-5 fixed w-full z-50 duration-300 bg-gray-200 text-gray-900 dark:bg-slate-900 dark:text-white border-b border-slate-300 dark:border-slate-800 shadow-2xs">
       <div className="container mx-auto flex justify-between items-center relative">
-        <h1 className="text-[18px] md:text-2xl font-bold">Jyotish Kumar</h1>
+        <a href="#home" className="text-[18px] md:text-2xl font-bold">
+          Jyotish Kumar
+        </a>
 
-        <ul className="hidden md:flex space-x-6 text-[18px] border rounded-3xl border-slate-400 dark:border-slate-800 dark:shadow-2xl px-5 py-2.5">
+        <ul className="hidden md:flex space-x-6 text-[18px] border rounded-3xl border-slate-400 dark:border-slate-800 dark:shadow-2xl px-5 py-2.5 mr-18">
           <li>
-            <a href="#home" className="hover:text-blue-600">
+            <a href="#home" className="hover:text-blue-600 px-3">
               Home
             </a>
           </li>
           <li>
-            <a href="#skills" className="hover:text-blue-600">
+            <a href="#skills" className="hover:text-blue-600 px-3">
               Skills
             </a>
           </li>
           <li>
-            <a href="#project" className="hover:text-blue-600">
+            <a href="#project" className="hover:text-blue-600 px-3">
               Projects
             </a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-blue-600">
+            <a href="#contact" className="hover:text-blue-600 px-3">
               Contact
             </a>
           </li>
