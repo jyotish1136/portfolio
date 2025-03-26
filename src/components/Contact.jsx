@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Mail, Phone } from "lucide-react";
 import axios from "axios";
 
 const Contact = () => {
@@ -50,23 +49,6 @@ const Contact = () => {
           Get in Touch
           <div className="bg-slate-900 dark:bg-white h-[4px] mt-2"></div>
         </h2>
-
-        <div className="mt-10 mx-20 grid md:grid-cols-2 gap-6 text-gray-900 dark:text-white">
-          <a
-            href={`mailto:${import.meta.env.VITE_EMAIL}`}
-            className="underline flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
-          >
-            <Mail size={32} />
-            <p>{import.meta.env.VITE_EMAIL}</p>
-          </a>
-          <a
-            href={`tel:${import.meta.env.VITE_MOB_NO}`}
-            className="underline  flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
-          >
-            <Phone size={32} />
-            <p>{import.meta.env.VITE_MOB_NO}</p>
-          </a>
-        </div>
         {alert && (
           <div className="h-auto w-auto border-0 rounded-2xl p-2 mt-3 bg-green-400 text-black">
             {alert}

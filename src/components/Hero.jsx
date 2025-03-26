@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Mail } from "lucide-react";
 const Hero = () => {
   return (
     <section
@@ -51,6 +52,13 @@ const Hero = () => {
             className="mx-4"
           >
             <FaTwitter className="text-3xl hover:text-blue-300 transition" />
+          </a>
+          <a
+            href={`mailto:${import.meta.env.VITE_EMAIL}`}
+            className="underline flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
+          >
+            <Mail size={32} />
+            <p>{import.meta.env.VITE_EMAIL}</p>
           </a>
         </div>
       </div>
