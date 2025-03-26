@@ -20,7 +20,7 @@ const Contact = () => {
 
     try {
       const { name, email, message } = formData;
-      const response = await axios.post(process.env.REACT_APP_API_URL, {
+      const response = await axios.post(REACT_APP_API_URL, {
         name,
         email,
         message,
@@ -53,18 +53,18 @@ const Contact = () => {
 
         <div className="mt-10 mx-20 grid md:grid-cols-2 gap-6 text-gray-900 dark:text-white">
           <a
-            href={`mailto:${process.env.EMAIL}`}
+            href={`mailto:${EMAIL}`}
             className="underline flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
           >
             <Mail size={32} />
-            <p>{process.env.EMAIL}</p>
+            <p>{EMAIL}</p>
           </a>
           <a
-            href={`tel:${process.env.MOB_NO}`}
+            href={`tel:${MOB_NO}`}
             className="underline  flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
           >
             <Phone size={32} />
-            <p>{process.env.MOB_NO}</p>
+            <p>{MOB_NO}</p>
           </a>
         </div>
         {alert && (
