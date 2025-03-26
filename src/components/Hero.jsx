@@ -58,7 +58,6 @@ const Hero = () => {
             className="underline flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
           >
             <Mail size={32} />
-            <p>{import.meta.env.VITE_EMAIL}</p>
           </a>
         </div>
       </div>
