@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Hero = () => {
   return (
     <section
@@ -24,6 +25,32 @@ const Hero = () => {
             className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
           >
             Resume
+          </a>
+        </div>
+        <div className="flex flex-row text-blue-600">
+          <a
+            href={`${import.meta.env.VITE_GITHUB}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" mx-4"
+          >
+            <FaGithub className="text-3xl hover:text-white transition" />
+          </a>
+          <a
+            href={`${import.meta.env.VITE_LINKED_IN}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" mx-4"
+          >
+            <FaLinkedin className="text-3xl hover:text-blue-400 transition" />
+          </a>
+          <a
+            href={`${import.meta.env.VITE_TWITTER}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-4"
+          >
+            <FaTwitter className="text-3xl hover:text-blue-300 transition" />
           </a>
         </div>
       </div>
