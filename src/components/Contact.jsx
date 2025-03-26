@@ -53,18 +53,18 @@ const Contact = () => {
 
         <div className="mt-10 mx-20 grid md:grid-cols-2 gap-6 text-gray-900 dark:text-white">
           <a
-            href={`mailto:${EMAIL}`}
+            href={`mailto:${REACT_APP_EMAIL}`}
             className="underline flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
           >
             <Mail size={32} />
-            <p>{EMAIL}</p>
+            <p>{REACT_APP_EMAIL}</p>
           </a>
           <a
-            href={`tel:${MOB_NO}`}
+            href={`tel:${REACT_APP_MOB_NO}`}
             className="underline  flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
           >
             <Phone size={32} />
-            <p>{MOB_NO}</p>
+            <p>{REACT_APP_MOB_NO}</p>
           </a>
         </div>
         {alert && (
