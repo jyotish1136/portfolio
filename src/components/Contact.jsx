@@ -10,7 +10,6 @@ const Contact = () => {
   });
   const [alert, setAlert] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -21,10 +20,11 @@ const Contact = () => {
 
     try {
       const { name, email, message } = formData;
-      const response = await axios.post(
-        "https://portfolio-backend-kmms.onrender.com/contact",
-        { name, email, message }
-      );
+      const response = await axios.post(process.env.REACT_APP_API_URL, {
+        name,
+        email,
+        message,
+      });
 
       if (response.status === 200) {
         setAlert("Message sent successfully!");
@@ -52,14 +52,20 @@ const Contact = () => {
         </h2>
 
         <div className="mt-10 mx-20 grid md:grid-cols-2 gap-6 text-gray-900 dark:text-white">
-          <div className="flex flex-col items-center space-y-2">
+          <a
+            href={`mailto:${process.env.EMAIL}`}
+            className="underline flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
+          >
             <Mail size={32} />
-            <p>jyotish1136@gmail.com</p>
-          </div>
-          <div className="flex flex-col items-center space-y-2">
+            <p>{process.env.EMAIL}</p>
+          </a>
+          <a
+            href={`tel:${process.env.MOB_NO}`}
+            className="underline  flex flex-col items-center space-y-2 text-blue-600 cursor-pointer"
+          >
             <Phone size={32} />
-            <p>+91 6202289236</p>
-          </div>
+            <p>{process.env.MOB_NO}</p>
+          </a>
         </div>
         {alert && (
           <div className="h-auto w-auto border-0 rounded-2xl p-2 mt-3 bg-green-400 text-black">
