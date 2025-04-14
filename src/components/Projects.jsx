@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Personal Notes App",
     image: "my-notes.png",
-    link: "#",
+    link: "https://my-notes-3cdx.onrender.com/",
     description:
       "A secure personal notes app with authentication spring boot, React JS and Tailwind CSS.",
   },
